@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', 'Kanit', sans-serif, cursive;
+}
+
+.nav-item:hover {
+    background-color: #4682B4;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+h2 {
+    position: relative;
+    bottom: 15%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.columna {
+    transition: transform .2s;
+}
+
+.columna:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.carousel-item {
+    filter: brightness(0.9);
+}
+
+.pie {
+    background-color: black;
+    color: white;
+}
