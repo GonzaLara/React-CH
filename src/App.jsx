@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import './App.css'
-import NavBar from './NavBar'
-import Lista from './ItemListContainer'
-import Carousel from './Carousel'
-import Temporada from './Temporada'
-import Footer from './Footer'
+import NavBar from './components/NavBar'
+import Lista from './components/ItemListContainer'
+import Carousel from './components/Carousel'
+import Temporada from './components/Temporada'
+import Footer from './components/Footer'
+import './style.css'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
       <NavBar />
       <Carousel />
-      <Lista mensaje={"Disponible la Temporada 35"}/>
+      <Lista mensaje={"Disponibles las ultimas Temporadas"}/>
       <Temporada />
       <Footer />
     </>

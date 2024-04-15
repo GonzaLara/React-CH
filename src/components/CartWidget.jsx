@@ -1,6 +1,5 @@
-import cart from "./assets/imagenes/carrito.svg";
-import log from "./assets/imagenes/ingreso.svg";
-import abajo from "./assets/imagenes/abajo.svg";
+import cart from "../assets/imagenes/carrito.svg";
+import log from "../assets/imagenes/ingreso.svg";
 
 const CartWidget = () => {
     return (

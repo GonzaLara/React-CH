@@ -1,8 +1,8 @@
 const Carousel = () => {
     return (
-        <div className="container-fluid bg-light mt-2">
+        <div className="container-fluid bg-white mt-2">
             <div className="row">
-                <div className="col">
+                <div className="col-md-10 mx-auto">
                     <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active" data-bs-interval="3000">

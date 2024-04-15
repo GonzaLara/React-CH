@@ -1,4 +1,4 @@
-import abajo from "./assets/imagenes/abajo.svg";
+import abajo from "../assets/imagenes/abajo.svg";
 
 const Lista = ({mensaje}) => {
     return (
