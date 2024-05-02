@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
-import arrayProductos from "./json/productos.json"
-import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import ItemList from "./ItemList";
+import Carousel from "./Carousel";
+import Temporada from "./Temporada";
+import arrayProductos from "./json/productos.json"
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
@@ -22,7 +24,9 @@ const ItemListContainer = () => {
     return (
         <div className="container">
             <div className="row">
+                <Carousel />
                 <ItemList items={items} />
+                <Temporada />
             </div>
         </div>
     )

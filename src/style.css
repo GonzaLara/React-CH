@@ -45,6 +45,11 @@
     filter: brightness(0.9);
 }
 
+.colum {
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+
 
 /* footer */
 .pie {
@@ -52,12 +57,12 @@
     color: white;
 }
 
-.colum {
-    margin-left: 7rem;
-    margin-top: 3rem;
-}
-
-.hola {
-    border-left: none;
-    border-bottom: none;
+/* erro 404 */
+.cont-img {
+    background-image: url(./assets/imagenes/404.png);
+    color: yellow;
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
