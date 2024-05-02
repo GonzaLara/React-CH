@@ -10,13 +10,13 @@ const CartWidget = () => {
                 </span>
             </button>
 
-            <div class="dropdown ms-3">
-                <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div className="dropdown ms-3">
+                <button className="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src={log} alt="loggeo" width={24}/>
                 </button>
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item text-center" type="button">Registrarse</button></li>
-                    <li><button class="dropdown-item text-center" type="button">Ingresar</button></li>
+                <ul className="dropdown-menu">
+                    <li><button className="dropdown-item text-center" type="button">Registrarse</button></li>
+                    <li><button className="dropdown-item text-center" type="button">Ingresar</button></li>
                 </ul>
             </div>
         </>

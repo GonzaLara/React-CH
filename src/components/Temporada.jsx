@@ -4,7 +4,10 @@ import Temp35 from "../assets/imagenes/s35.webp";
 
 const Temporada = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
+            <div className="row text-center">
+                <h2 className="text-uppercase bg-black text-light p-3">Tambien Disponible</h2>
+            </div>
             <div className="row">
                 <div className="col text-center columna">
                     <img src={Temp33} alt="t33" className="img-fluid"/>
