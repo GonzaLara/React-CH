@@ -1,3 +1,4 @@
 # Siempre Simpson
+## Proyecto Final: React JS
 
-Pagina para ver la serie y comprar diversos productos de la misma.
+Pagina donde se puede encontrar contenido de la serie y comprar diversos productos de la misma.
