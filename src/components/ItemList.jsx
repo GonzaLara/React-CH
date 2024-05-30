@@ -4,7 +4,7 @@ import Item from "./Item";
 const ItemList = ({ items }) => {
     return (
         <>
-            <div className="row mt-5 mb-2">
+            <div className="row mt-5 mb-2" id="tienda">
                 <div className="col">
                     <ul className="nav d-flex justify-content-center text-uppercase mb-3 text-decoration-none">
                         <li className="nav-item rounded-pill">

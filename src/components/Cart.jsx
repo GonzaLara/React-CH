@@ -1,19 +1,19 @@
 import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import trash from "../assets/imagenes/trash3.svg";
 
 
 const Cart = () => {
     const { cart, removeItem, clear, countProducts, finalProducts } = useContext(CartContext);
-    if (finalProducts() == 0) {
+    if (countProducts() == 0) {
         return (
             <div className="container my-5">
                 <div className="row detail">
                     <div className="col text-center">
                         <div className="alert alert-primary" role="alert">
                             <h3>No hay productos</h3>
-                            <Link to={"/"} className="btn text-white bg-dark my-5">Volver al Inicio</Link>
+                            <Link to={"/"} className="btn bg-warning text-uppercase border border-secondary my-5">Volver al Inicio</Link>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const Cart = () => {
                     <table className="table">
                         <tbody>
                             <tr>
-                                <td colSpan={6} className="text-end"><button className="btn text-white bg-dark" onClick={clear}>Vaciar Carrito</button></td>
+                                <td colSpan={6} className="text-end"><button className="btn bg-warning text-uppercase border border-secondary" onClick={clear}>Vaciar Carrito</button></td>
                             </tr>
 
                             {cart.map(item => (
@@ -44,7 +44,7 @@ const Cart = () => {
                             <tr>
                                 <td className="text-center" colSpan={4}><b>Total</b></td>
                                 <td className="text-center"><b>${finalProducts()}</b></td>
-                                <td className="text-end"><Link to={"/checkout"} className="btn text-white bg-dark">Checkout</Link></td>
+                                <td className="text-end"><Link to={"/checkout"} className="btn bg-warning text-uppercase border border-secondary">Checkout</Link></td>
 
                             </tr>
                         </tbody>

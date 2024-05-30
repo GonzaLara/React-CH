@@ -54,7 +54,7 @@ const Checkout = () => {
     }
 
     return (
-        <div className="container my-5">
+        <div className="container mt-5">
             {!orderId ?
                 <div className="row detail">
                     <div className="col">
@@ -71,7 +71,7 @@ const Checkout = () => {
                                 <label className="form-label">Telefono</label>
                                 <input type="text" className="form-control" onInput={(e) => { setTelefono(e.target.value) }} />
                             </div>
-                            <button type="button" className="btn text-white bg-black" onClick={generarOrden}>Generar Orden</button>
+                            <button type="button" className="btn bg-warning text-uppercase border border-secondary" onClick={generarOrden}>Generar Orden</button>
                         </form>
                     </div>
 
@@ -87,7 +87,7 @@ const Checkout = () => {
                                     </tr>
                                 ))}
                                 <tr>
-                                    <td colSpan={2}><b>Total</b></td>
+                                    <td colSpan={3}><b>Total</b></td>
                                     <td className="text-end"><b>${finalProducts()}</b></td>
 
                                 </tr>

@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
 import ItemCount from "./ItemCount";
+import { useNavigate } from "react-router-dom";
 
 const ItemDetail = ({ item }) => {
     const {addItem} = useContext(CartContext);
+    const navigate = useNavigate();
 
     const onAdd = (quantity) => {
         addItem(item, quantity);
@@ -14,6 +16,7 @@ const ItemDetail = ({ item }) => {
         <div className="container">
             <div className="row">
                 <div className="col-md-5 offset-md-2">
+                <td className="text-start"><button className="btn bg-warning text-uppercase border border-secondary" onClick={() => navigate(-1)}>Volver</button></td>
                     <img src={item.imagen} className="img-fluid" alt={item.nombre} />
                 </div>
                 <div className="col-md-4">

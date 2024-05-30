@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Fuzzy Bubbles', 'Kanit', sans-serif, cursive;
 }
+
 /*  */
 
 
@@ -22,10 +23,11 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0, 0, 0, .9);
     height: 100px;
     top: 0;
 }
+
 /*  */
 
 
@@ -47,6 +49,7 @@
     text-transform: uppercase;
     font-size: 2.5vw;
 }
+
 /*  */
 
 
@@ -55,6 +58,7 @@
     filter: brightness(0.9);
     filter: opacity(60%);
 }
+
 .carousel-image {
     background-position: center;
     background-size: cover;
@@ -100,7 +104,7 @@
 .cont-img {
     background-image: url(./assets/imagenes/404.png);
     color: yellow;
-    height: 100vh; 
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

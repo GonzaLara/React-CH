@@ -11,21 +11,26 @@ import './style.css'
 
 function App() {
   return (
-    <CartContextProvider >
-      <BrowserRouter>
-        <NavBar />
-        <Routes >
-          <Route path={"/"} element={<ItemListContainer />} />
-          <Route path={"/category/:id"} element={<ItemListContainer />} />
-          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-          <Route path={"/cart"} element={<Cart />} />
-          <Route path={"/checkout"} element={<Checkout />} />
-          <Route path={"*"} element={<Error404 />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </CartContextProvider>
-  )
+    <div className="app" style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <CartContextProvider>
+        <BrowserRouter>
+          <NavBar />
+          <div style={{ flex: 1 }}>
+            <Routes>
+              <Route path={"/"} element={<ItemListContainer />} />
+              <Route path={"/category/:id"} element={<ItemListContainer />} />
+              <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+              <Route path={"/cart"} element={<Cart />} />
+              <Route path={"/checkout"} element={<Checkout />} />
+              <Route path={"*"} element={<Error404 />} />
+            </Routes>
+          </div>
+          <Footer />
+        </BrowserRouter>
+      </CartContextProvider>
+    </div>
+  );
 }
+
 
 export default App

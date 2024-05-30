@@ -4,7 +4,7 @@ import Temp35 from "../assets/imagenes/s35.webp";
 
 const Temporada = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id="temporadas">
             <div className="row text-center">
                 <h2 className="text-uppercase bg-black text-light p-3">Proximamente</h2>
             </div>

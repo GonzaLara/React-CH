@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
@@ -7,14 +7,14 @@ import Loading from "./Loading";
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([]);
     const [visible, setVisible] = useState(true);
-    const {id} = useParams();
+    const { id } = useParams();
 
-    useEffect(()=> {
+    useEffect(() => {
         const db = getFirestore();
         const docRef = doc(db, "items", id);
         getDoc(docRef).then(snapShot => {
-            if(snapShot.exists()) {
-                setItem({id: snapShot.id, ...snapShot.data()});
+            if (snapShot.exists()) {
+                setItem({ id: snapShot.id, ...snapShot.data() });
                 setVisible(false);
             }
         });
