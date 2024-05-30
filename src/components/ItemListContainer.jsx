@@ -24,7 +24,7 @@ const ItemListContainer = () => {
     }, [id])
 
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <Carousel />
                 {visible ? <Loading /> : <ItemList items={items} />}

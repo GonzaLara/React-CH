@@ -9,7 +9,7 @@ const Cart = () => {
     if (finalProducts() == 0) {
         return (
             <div className="container my-5">
-                <div className="row">
+                <div className="row detail">
                     <div className="col text-center">
                         <div className="alert alert-primary" role="alert">
                             <h3>No hay productos</h3>
@@ -23,7 +23,7 @@ const Cart = () => {
 
     return (
         <div className="container my-5">
-            <div className="row">
+            <div className="row detail">
                 <div className="col">
                     <table className="table">
                         <tbody>

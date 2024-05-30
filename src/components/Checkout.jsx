@@ -56,7 +56,7 @@ const Checkout = () => {
     return (
         <div className="container my-5">
             {!orderId ?
-                <div className="row">
+                <div className="row detail">
                     <div className="col">
                         <form>
                             <div className="mb-3">

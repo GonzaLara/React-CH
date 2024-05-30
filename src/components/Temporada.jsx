@@ -6,7 +6,7 @@ const Temporada = () => {
     return (
         <div className="container-fluid">
             <div className="row text-center">
-                <h2 className="text-uppercase bg-black text-light p-3">Tambien Disponible</h2>
+                <h2 className="text-uppercase bg-black text-light p-3">Proximamente</h2>
             </div>
             <div className="row">
                 <div className="col text-center columna">

@@ -4,9 +4,9 @@ import Item from "./Item";
 const ItemList = ({ items }) => {
     return (
         <>
-            <div className="row">
-                <div className="col colum">
-                    <ul className="nav text-uppercase mb-3 text-decoration-none">
+            <div className="row mt-5 mb-2">
+                <div className="col">
+                    <ul className="nav d-flex justify-content-center text-uppercase mb-3 text-decoration-none">
                         <li className="nav-item rounded-pill">
                             <Link to={"/"} className="nav-link text-dark">Todo</Link>
                         </li>

@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className="container">
-            <div className="row my-5">
+            <div className="row detail mb-5">
                 {visible ? <Loading /> : <ItemDetail item={item} />}
             </div>
         </div>

@@ -4,8 +4,8 @@ import logo from "../assets/imagenes/logo.png";
 
 const NavBar = () => {
     return (
-        <div className="container-fluid bg-black">
-            <div className="row fondo p-3">
+        <div className="container-fluid header">
+            <div className="row fondo p-2">
                 <div className="col-md text-start">
                     <Link to={"/"}>
                         <img src={logo} alt="logo" />
@@ -23,9 +23,9 @@ const NavBar = () => {
                         <li className="nav-item rounded-pill">
                             <NavLink className="nav-link text-light">Temporadas</NavLink>
                         </li>
-                        <li className="nav-item rounded-pill">
-                            <NavLink className="nav-link text-light">Noticias</NavLink>
-                        </li>
+                        {/* <li className="nav-item rounded-pill">
+                            <NavLink className="nav-link text-light">Personajes</NavLink>
+                        </li> */}
                     </ul>
                 </div>
 
